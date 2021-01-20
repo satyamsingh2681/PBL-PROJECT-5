@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <script src="postrequest.js"></script>
+    <script src="getrequest.js"></script>
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="side-nav-bar">
+            <div class="snb-upper">
+                <img src="avatar2.png">
+                <small>Vedangi Agarwal</small>
+                <span class="dropdown"><i class="fas fa-users dropbtn"></i>
+                    <div class="dropdown-content">
+                        <a href="/form_class">Form a Class</a>
+                        OR
+                        <a href="/create_group">Create a group</a>
+                    </div>
+                </span><br>
+                <span class="dropdown"><a href="/"><i class="fas fa-handshake dropbtn"></i></a>
+                    <div class="dropdown-content">
+                        Join a group
+                    </div>
+                </span><br>
+                <span class="dropdown"><a href="/"><i class="fas fa-plus dropbtn"></i></a>
+                    <div class="dropdown-content">
+                        Go for an instant meeting
+                    </div>
+                </span>                
+            </div>
+            <div class="snb-lower">
+                <p>About</p>
+                <p>Help</p>
+                <button><i class="fas fa-power-off"></i></button>
+            </div>            
+        </div>
+        <div class="main-section">
+		<div class="head-section">
+			<div class="headLeft-section">
+				<div class="headLeft-sub">
+					<input type="text" name="search" placeholder="Search a group...">
+					<button> <i class="fa fa-search"></i> </button>
+				</div>
+			</div>
+			<div class="headRight-section">
+				<div class="headRight-sub">
+					<button id="chat">Chat &nbsp;<i class="fas fa-comment-dots"></i></button>
+                    <button id="notes">Notes &nbsp;<i class="fas fa-book-open"></i></button>
+                    <button id="ass">Assignments &nbsp;<i class="fas fa-edit"></i></button>
+                    <button id="videos">Videos &nbsp;<i class="fas fa-play-circle"></i></button>
+                    <button id="att">Attendance &nbsp;<i class="fas fa-user-check"></i></button>
+                    <a href="/join" target="_blank"><button id="join">Join</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="body-section" id="myDIV">
+			<div class="left-section mCustomScrollbar" data-mcs-theme="minimal-dark">
+				<ul>
+					<button onclick="myFunction()" class="btn">
+					<li id="li1">
+						<div class="chatList">
+							<div class="img">
+								<img src="/demo/man01.png">
+							</div>
+							<div class="desc" id="heading">
+								
+								<h5 >Software Engineering</h5>
+								
+							</div>
+						</div>
+					</li>
+					</button>
+
+					<button onclick="myFunction()" class="btn">
+					<li id="li2">
+						<div class="chatList">
+							<div class="img">
+								<img src="/demo/man02.png">
+							</div>
+							<div class="desc" id="heading">
+								
+								<h5 >Design & Analysis of Algorithm</h5>
+								
+							</div>
+						</div>
+					</li>
+					</button>
+					<li id="li3">
+						<div class="chatList">
+							<div class="img">
+								<img src="/demo/man03.png">
+							</div>
+							<div class="desc">
+								<small class="time">4 day</small>
+								<h5>Managing the Cloud</h5>
+								<small>Lorem ipsum dolor sit amet...</small>
+							</div>
+						</div>
+					</li>
+					<li id="li4">
+						<div class="chatList">
+							<div class="img">
+								<img src="/demo/man04.png">
+							</div>
+							<div class="desc">
+								<small class="time">18 day</small>
+								<h5>Simulation Lab</h5>
+								<small>Lorem ipsum dolor sit amet...</small>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="chatList">
+							<div class="img">
+								<i class="fa fa-circle"></i>
+								<img src="/demo/man01.png">
+							</div>
+							<div class="desc">
+								<small class="time">11:50 am</small>
+								<h5>Cloud Computing</h5>
+								<small>Lorem ipsum dolor sit amet...</small>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="chatList">
+							<div class="img">
+								<img src="/demo/man02.png">
+							</div>
+							<div class="desc">
+								<small class="time">20 day</small>
+								<h5>PBL</h5>
+								<small>Lorem ipsum dolor sit amet...</small>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="chatList">
+							<div class="img">
+								<img src="/demo/man03.png">
+							</div>
+							<div class="desc">
+								<small class="time">18 day</small>
+								<h5>ARP</h5>
+								<small>Lorem ipsum dolor sit amet...</small>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="chatList">
+							<div class="img">
+								<img src="/demo/man02.png">
+							</div>
+							<div class="desc">
+								<small class="time">20 day</small>
+								<h5>Internet of Things</h5>
+								<small>Lorem ipsum dolor sit amet...</small>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="chatList">
+							<div class="img">
+								<img src="/demo/man03.png">
+							</div>
+							<div class="desc">
+								<small class="time">18 day</small>
+								<h5>Python Programming</h5>
+								<small>Lorem ipsum dolor sit amet...</small>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+<!--                chat section        -->
+            <div id="chat-body" class="chat-body">
+                <div class="right-section">
+                    <div class="message mCustomScrollbar" data-mcs-theme="minimal-dark">
+
+                    	                        <p id="demo"></p>
+                    	                        <script>
+												function myFunction() {
+  												document.getElementById("demo").innerHTML = "welcome to class";
+												}
+												</script>
+ <!--                       <ul>
+                            <li class="msg-day"><small>Tuesday</small></li>
+                            <li class="msg-left">
+                                <div class="msg-left-sub">
+                                    <img src="/demo/man03.png">
+                                    <div class="msg-desc">
+                                        Good morning students !
+                                    </div>
+                                </div>
+                                </li>
+                            <li class="msg-left">
+                                <div class="msg-left-sub">
+                                    <img src="/demo/man03.png">
+                                    <div class="msg-desc">
+                                        We are having our class in next 15 minutes. Be ready.
+                                    </div>
+                                    <small>08:25 am</small>
+                                </div>
+                            </li>
+                            <li class="msg-right">
+                                <div class="msg-left-sub">
+                                    <img src="/demo/man04.png">
+                                    <div class="msg-desc">
+                                        Ok sir.
+                                    </div>
+                                    <small>08:27 am</small>
+                                </div>
+                            </li>
+                            <li class="msg-right">
+                                <div class="msg-left-sub">
+                                    <img src="/demo/man04.png">
+                                    <div class="msg-desc">
+                                        Okay sir.
+                                    </div>
+                                    <small>08:31 am</small>
+                                </div>
+                            </li>
+                            <li class="msg-day"><small>Wednesday</small></li>
+                            <li class="msg-left">
+                                <div class="msg-left-sub">
+                                    <img src="/demo/man03.png">
+                                    <div class="msg-desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                    </div>
+                                    <small>05:25 am</small>
+                                </div>
+                            </li>
+                            <li class="msg-left">
+                                <div class="msg-left-sub">
+                                    <img src="/demo/man03.png">
+                                    <div class="msg-desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.
+                                    </div>
+                                    <small>05:25 am</small>
+                                </div>
+                            </li>
+                            <li class="msg-right">
+                                <div class="msg-left-sub">
+                                    <img src="/demo/man04.png">
+                                    <div class="msg-desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.
+                                    </div>
+                                    <small>05:25 am</small>
+                                </div>
+                            </li>
+                            <li class="msg-left">
+                                <div class="msg-left-sub">
+                                    <img src="/demo/man03.png">
+                                    <div class="msg-desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.
+                                    </div>
+                                    <small>05:25 am</small>
+                                </div>
+                            </li>
+                            <li class="msg-right">
+                                <div class="msg-left-sub">
+                                    <img src="/demo/man04.png">
+                                    <div class="msg-desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.
+                                    </div>
+                                    <small>05:25 am</small>
+                                </div>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <div class="right-section-bottom">
+                        <form>
+                            <div class="upload-btn">
+                                <button class="btn"><i class="fa fa-photo"></i></button>
+                                <input type="file" name="myfile" />
+                            </div>
+                            <input type="text" name="" placeholder="type here...">
+                            <button class="btn-send"><i class="fa fa-send"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+<!--                notes section        -->
+            <div id="notes-body" class="notes-body">
+                <div class="right-section">
+                    <div class="message mCustomScrollbar" data-mcs-theme="minimal-dark">
+                        <center>
+                            <h1>Welcome to Notes Section !</h1>
+                            <h3>Here you will be able to see the notees uploaded by the respective faculty.</h3>
+                        </center>
+                    </div>
+                    <div class="right-section-bottom">
+                    </div>
+                </div>
+            </div>
+<!--                assignments section        -->
+            <div id="ass-body" class="ass-body">
+                <div class="right-section">
+                    <div class="message mCustomScrollbar" data-mcs-theme="minimal-dark">
+                        <center>                    
+
+                        <form class="form-horizontal" method="POST" enctype="multipart/form-data" id="fileUploadForm">
+                            <div class="form-group">
+                                <h2><label class="control-label col-sm-2" for="uploadfile">Upload Assignment:</label></h2>
+                                <div class="col-sm-5">
+                                    <input type="file" class="form-control" id="uploadfile" placeholder="Upload File"  name="uploadfile"></input>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group"> 
+                                <div class="col-sm-offset-2 col-sm-5">
+                                  <button type="submit" class="btn btn-default" id="btnSubmit">Upload</button>
+                                  <button type="button" class="btn btn-default" id="btnGetFiles">Files</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </center>
+                        <hr/>
+                        <div class="col-sm-offset-2" id="listFiles"></div>
+
+
+                    </div>
+                    <div class="right-section-bottom">
+                    </div>
+                </div>
+            </div>
+<!--                videos section        -->
+            <div id="videos-body" class="videos-body">
+                <div class="right-section">
+                    <div class="message mCustomScrollbar" data-mcs-theme="minimal-dark">
+                        <center>
+                            <h1>Welcome to Videos Section !</h1>
+                            <h3>Here you will be able to see any informative videos or recording uploaded by the respective faculty.</h3>
+                        </center>
+                    </div>
+                    <div class="right-section-bottom">
+                    </div>
+                </div>
+            </div>
+<!--                attendance section        -->
+            <div id="att-body" class="att-body">
+                <div class="right-section">
+                    <div class="message mCustomScrollbar" data-mcs-theme="minimal-dark">
+                        <center>
+                            <h1>Welcome to Attendance Section !</h1>
+                            <h3>Here you can keep track of your attendance.</h3>
+                        </center>
+                    </div>
+                    <div class="right-section-bottom">
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script type="text/javascript">
+
+
+        $("#chat").on("click", function(e) {
+            document.getElementById("chat-body").style.display = "block";
+            document.getElementById("notes-body").style.display = "none";
+            document.getElementById("ass-body").style.display = "none";
+            document.getElementById("videos-body").style.display = "none";
+            document.getElementById("att-body").style.display = "none";
+        })
+        $("#notes").on("click", function(e) {
+            document.getElementById("notes-body").style.display = "block";
+            document.getElementById("chat-body").style.display = "none";
+            document.getElementById("ass-body").style.display = "none";
+            document.getElementById("videos-body").style.display = "none";
+            document.getElementById("att-body").style.display = "none";
+        })
+        $("#ass").on("click", function(e) {
+            document.getElementById("ass-body").style.display = "block";
+            document.getElementById("chat-body").style.display = "none";
+            document.getElementById("notes-body").style.display = "none";
+            document.getElementById("videos-body").style.display = "none";
+            document.getElementById("att-body").style.display = "none";
+        })
+        $("#videos").on("click", function(e) {
+            document.getElementById("videos-body").style.display = "block";
+            document.getElementById("chat-body").style.display = "none";
+            document.getElementById("ass-body").style.display = "none";
+            document.getElementById("notes-body").style.display = "none";
+            document.getElementById("att-body").style.display = "none";
+        })
+        $("#att").on("click", function(e) {
+            document.getElementById("att-body").style.display = "block";
+            document.getElementById("chat-body").style.display = "none";
+            document.getElementById("ass-body").style.display = "none";
+            document.getElementById("videos-body").style.display = "none";
+            document.getElementById("notes-body").style.display = "none";
+        })
+    </script>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- custom scrollbar plugin -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+</body>
+</html>
